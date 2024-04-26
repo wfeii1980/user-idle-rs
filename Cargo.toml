@@ -18,6 +18,7 @@ all-features = false
 
 [features]
 default = ["x11"]
+vendored = ["dbus/vendored"]
 
 [target.'cfg(target_os = "linux")'.dependencies]
 x11 = { version = "2.21", features = ["xlib", "xss"], optional = true }
